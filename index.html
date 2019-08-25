@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE HTML>
 <html lang="ko-KR">
 <head>
@@ -8,10 +9,10 @@ var myPwd = "1202";
 function pwdChk() {
   var pwd = document.getElementById('pwd');
   if(pwd.value == myPwd) {
-    location.href="main.html";
+    location.href="박은진.html";
     return true;
     }else {
-    alert('비밀번호가 다르다.');
+    alert('비밀번호가 다릅니다.');
     return false;
  }
 }
@@ -21,4 +22,68 @@ function pwdChk() {
 비밀번호 : <input type="password" name="pwd" id="pwd" />
 <button onclick="pwdChk()">비밀번호 확인</button>
 </body>
+</html>
+-->
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>커플 웹페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      #jb-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 5px solid #000000;
+      }
+      #jb-content {
+        width: 600px;
+        padding: 50px;
+        margin-bottom: 120px;
+        float: right;
+        position: relative;
+        left: -13%;
+        border: 5px solid #8CEE8C;
+      }
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+        border: 1px solid #bcbcbc;
+      }
+      @media ( max-width: 480px ) {
+        #jb-container {
+          width: auto;
+        }
+        #jb-content {
+          float: none;
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="jb-container">
+      <div id="jb-header">
+
+        <style>
+        			div { text-align: center; }
+        		</style>
+
+<img src="reto.gif"
+
+      </div>
+      <div id="jb-content">
+
+      </div>
+      <div id="jb-sidebar">
+        <ul>
+        </ul>
+      </div>
+      <div id="jb-footer">
+        <p>Copyright</p>
+      </div>
+    </div>
+  </body>
 </html>
