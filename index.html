@@ -1,30 +1,3 @@
-<!--
-<!DOCTYPE HTML>
-<html lang="ko-KR">
-<head>
-<meta charset="UTF-8">
-<title></title>
-<script>
-var myPwd = "1202";
-function pwdChk() {
-  var pwd = document.getElementById('pwd');
-  if(pwd.value == myPwd) {
-    location.href="박은진.html";
-    return true;
-    }else {
-    alert('비밀번호가 다릅니다.');
-    return false;
- }
-}
-</script>
-</head>
-<body>
-비밀번호 : <input type="password" name="pwd" id="pwd" />
-<button onclick="pwdChk()">비밀번호 확인</button>
-</body>
-</html>
--->
-
 <!doctype html>
 <html lang="ko">
   <head>
@@ -32,19 +5,13 @@ function pwdChk() {
     <title>커플 웹페이지</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      #jb-container {
-        width: 940px;
-        margin: 10px auto;
-        padding: 20px;
-        border: 5px solid #000000;
-      }
       #jb-content {
         width: 600px;
         padding: 50px;
         margin-bottom: 120px;
-        float: right;
+        float: both;
         position: relative;
-        left: -13%;
+        left: 25%;
         border: 5px solid #8CEE8C;
       }
       #jb-footer {
@@ -82,7 +49,30 @@ function pwdChk() {
         </ul>
       </div>
       <div id="jb-footer">
-        <p>Copyright</p>
+        <html lang="ko-KR">
+        <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <script>
+        var myPwd = "1202";
+        function pwdChk() {
+          var pwd = document.getElementById('pwd');
+          if(pwd.value == myPwd) {
+            location.href="main.html";
+            return true;
+            }else {
+            alert('비밀번호가 다릅니다.');
+            return false;
+         }
+        }
+        </script>
+        </head>
+        <body>
+        비밀번호 : <input type="password" name="pwd" id="pwd" />
+        <button onclick="pwdChk()">비밀번호 확인</button>
+        </body>
+        </html>
+
       </div>
     </div>
   </body>
