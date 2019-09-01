@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>우리들의 일상</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      html, body { background: linear-gradient(to right, #9796f0, #fbc7d4);  }
+ /* CSS설정 */     
+    /* jb-content Dday */
+      #jb-content {
+        width: 600px;
+        padding: 50px;
+        margin-bottom: 120px;
+        float: both;
+        position: relative;
+        left: 25%;
+      }
+    /* jb-footer passsword */
+      #jb-footer {
+        clear: both;
+        padding: 20px;
+      }
+     /* div 모든설정 */
+      div { text-align: center; }
+    </style>
+    
+ 
+  </head>
+  
+  <!--  body 시작 -->
+  <body>
+<!-- 메인 image jb-header -->
+  <div id="jb-header">
+	<img src="main.JPG">
+  </div>
+  
+  <!-- Dday jb-content -->
+   <div id="jb-content">
+       <!-- dday 표시 JS -->
+         <script language="JavaScript">
+        <!--
+        var now = new Date();
+        var then = new Date("august 1,2016");
+        var gap = now.getTime() - then.getTime();
+        gap = Math.floor(gap / (1000 * 60 * 60 * 24));
+        document.write("사랑한지 " + gap + "일");
+        // -->
+        </script> 
+    </div>
+    
+   <!-- password jb-footer -->    
+    
+    <div id="jb-footer">
+              당신의 생일을 입력해주세요 : <input type="password" name="pwd" id="pwd" />
+        <button onclick="pwdChk()">입장하기</button>   
+ <!--  비밀번호 check JS -->
+        <script>
+        var myPwd = "1202";
+        function pwdChk() {
+          var pwd = document.getElementById('pwd');
+          if(pwd.value == myPwd) {
+            location.href="main.html";
+            return true;
+            }else {
+            alert('비밀번호가 다릅니다.');
+            return false;
+         }
+        }
+        </script>
+      </div>
+
+  </body>
+</html>

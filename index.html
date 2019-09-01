@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       html, body { background: linear-gradient(to right, #9796f0, #fbc7d4);  }
+ /* CSS설정 */     
+    /* jb-content Dday */
       #jb-content {
         width: 600px;
         padding: 50px;
@@ -13,37 +15,30 @@
         float: both;
         position: relative;
         left: 25%;
-        border: 5px solid #8CEE8C;
       }
+    /* jb-footer passsword */
       #jb-footer {
         clear: both;
         padding: 20px;
-        border: 1px solid #bcbcbc;
       }
-      @media ( max-width: 480px ) {
-        #jb-container {
-          width: auto;
-        }
-        #jb-content {
-          float: none;
-          width: auto;
-        }
-      }
+     /* div 모든설정 */
+      div { text-align: center; }
     </style>
+    
+ 
   </head>
+  
+  <!--  body 시작 -->
   <body>
-    <div id="jb-container">
-      <div id="jb-header">
-
-        <style>
-        			div { text-align: center; }
-        		</style>
-
-<img src="main.JPG">
-
-      </div>
-      <div id="jb-content">
-        <script language="JavaScript">
+<!-- 메인 image jb-header -->
+  <div id="jb-header">
+	<img src="main.JPG">
+  </div>
+  
+  <!-- Dday jb-content -->
+   <div id="jb-content">
+       <!-- dday 표시 JS -->
+         <script language="JavaScript">
         <!--
         var now = new Date();
         var then = new Date("august 1,2016");
@@ -51,17 +46,15 @@
         gap = Math.floor(gap / (1000 * 60 * 60 * 24));
         document.write("사랑한지 " + gap + "일");
         // -->
-        </script>
-      </div>
-      <div id="jb-sidebar">
-        <ul>
-        </ul>
-      </div>
-      <div id="jb-footer">
-        <html lang="ko-KR">
-        <head>
-        <meta charset="UTF-8">
-        <title></title>
+        </script> 
+    </div>
+    
+   <!-- password jb-footer -->    
+    
+    <div id="jb-footer">
+              당신의 생일을 입력해주세요 : <input type="password" name="pwd" id="pwd" />
+        <button onclick="pwdChk()">입장하기</button>   
+ <!--  비밀번호 check JS -->
         <script>
         var myPwd = "1202";
         function pwdChk() {
@@ -75,14 +68,7 @@
          }
         }
         </script>
-        </head>
-        <body>
-        비밀번호 : <input type="password" name="pwd" id="pwd" />
-        <button onclick="pwdChk()">비밀번호 확인</button>
-        </body>
-        </html>
-
       </div>
-    </div>
+
   </body>
 </html>
