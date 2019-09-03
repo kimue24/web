@@ -3,55 +3,46 @@
 <head>
     <style type="text/css">
     ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
-ul:after{
-    content:'';
-    display: block;
-    clear:both;
-}
-li {
-    float: left;
-    
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    margin: 0 auto;
-    
-}
-li a:hover:not(.active) {
-    background-color: #111;
-}
-.active {
-    background-color: #4CAF50;
-   
-}</style>
+    	list-style-type: none;
+    	margin: 0;
+   		padding: 0;
+    	background-color: #333;
+		}
+	ul:after{
+    	content:'';
+    	display: block;
+    	clear:both;
+		}
+	li {float: left;}
+	li a {
+    	display: block;
+    	color: white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+    	margin: 0 auto;   
+		}
+	li a:hover:not(.active) {background-color: #111;}
+	.active {background-color: #4CAF50;}
+	.slideimg {margin: 0 auto;}
+	.mySlides {display:none;}
+	</style>
 
-<!-- �׶��̼� ���ȭ�� ���� -->
+<!-- 백그라운드 그라데이션 img -->
     <style>
     @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+	html, body {background: linear-gradient(to right, #9796f0, #fbc7d4);}
+	</style>
 
-html, body { background: linear-gradient(to right, #9796f0, #fbc7d4);  }
-</style>
-
-<!--  �����̵�� css -->
-<title>우리들의 이야기 </title>
+<!--  占쏙옙占쏙옙占싱듸옙占� css -->
+<title> 우리들의 일상 </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/lib/w3.css">
-<style>
-.mySlides {display:none;}
-</style>
+
 
 </head>
 
-<!-- ����� �޴��� ǥ�� �ּ�ó�� -->
+<!-- 메뉴이름 표시 html -->
 <body>
     <ul>
       <li><a class="active" href="#home">Home</a></li>
@@ -59,29 +50,29 @@ html, body { background: linear-gradient(to right, #9796f0, #fbc7d4);  }
       <li><a href="blog.html">Blog</a></li>
       <li><a href="bookmark.html">Bookmark</a></li>
     </ul>
- <!-- �����̵�� �̹��� ���� -->  
-    <div class="w3-content w3-section" style="max-width:1200px">
+ <!-- 슬라이드쇼 이미지 html -->  
+    <div class="slideimg" style="max-width:1200px">
   <img class="mySlides" src="slide1.jpg" style="width:100%; margin: 0 auto;">
   <img class="mySlides" src="slide2.jpg" style="width:100%; margin: 0 auto;">
   <img class="mySlides" src="slide3.jpg" style="width:100%; margin: 0 auto;">
   <img class="mySlides" src="slide4.jpg" style="width:100%; margin: 0 auto;">
 </div>
-<!-- �����̵�� script -->
-<script>
-var myIndex = 0;
-carousel();
+<!-- 슬라이드쇼 script -->
+	<script>
+		var myIndex = 0;
+		carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-</script>
+		function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
 </body>
 </html>
